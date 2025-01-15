@@ -25,12 +25,76 @@
                 <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
               </li>
             </ul>
-              <ul class="navbar-nav ms mb-2 mb-lg-0">
+              <ul class="nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"> 
-                  <a class="nav-link" aria-current="page" href="#">Registarse</a>
+                  <a class="nav-link" aria-current="page" href="#">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Registrarse
+                    </button>
+                  
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password">
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Registrarse</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Iniciar Sesion</a>
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Iniciar Sesion
+                  </button>
+                
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel1">Inicio de Sesion</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Contraseña</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
                 </li>
               </ul>
             

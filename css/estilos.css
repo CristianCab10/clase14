@@ -7,4 +7,14 @@
     height: 600px;
     object-fit: cover;
 
+}       
+.nav button{
+    background-color: black;
+    border: 1px solid gray;
+}
+.nav button:hover{
+    background-color: white;
+    transition: .3s ease-out;
+    color: black;
+    border: black 1px solid;
 }
